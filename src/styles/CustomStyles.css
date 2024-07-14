@@ -1,0 +1,13 @@
+/* customStyles.css */
+
+.slick-dots li button:before {
+    font-size: 25px;
+    color: green; /* Change the dot color to green */
+    border-radius: 0; /* Make the dots square */
+    content: '■'; /* Change the dot shape to square */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: darkgreen; /* Change the active dot color to dark green */
+  }
+  
