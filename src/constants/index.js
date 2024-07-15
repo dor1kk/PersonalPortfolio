@@ -9,6 +9,7 @@ import Projekt5 from '../assets/Projekt5.png'
 import Projekt6 from '../assets/Projekt6.png'
 import Projekt7 from '../assets/Projekt7.png'
 import Projekt8 from '../assets/Projekt8.png'
+import Projekt9 from '../assets/Projekt9.png'
 
 
 import FullStack from '../assets/1.png'
@@ -58,6 +59,22 @@ export const MySkillSet = [
 
 
   export const MyProjects = [
+    {
+      title: 'Health Care System',
+      description: 'A Health care system web app that allows patients to browse doctors set appoinments etc',
+      link: '',
+      image: Projekt9,
+      status: 'in-progress',
+      category: 'Web',
+      technologies: ['React', 'Tailwind', 'Sanity'],
+      techImage: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
+        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
+        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
+        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+      ],
+      audience: 'Video content creators and viewers',
+    },
     {
       title: 'MusicAL- Listen Free',
       description: 'A music app that allows users to browse and listen to the songs that they want to listen',

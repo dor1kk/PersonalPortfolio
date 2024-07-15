@@ -13,9 +13,9 @@ const Header = () => {
         <li><a href="#" className='hover:text-green-600'>Contact</a></li>
       </ul>
       <div className='flex gap-8 mt-4 md:mt-0'>
-        <a href="#" aria-label="GitHub"><FaGithub className='text-green-900 hover:text-green-600' /></a>
-        <a href="#" aria-label="LinkedIn"><FaLinkedin className='text-green-900 hover:text-green-600' /></a>
-        <a href="#" aria-label="Gmail"><BiLogoGmail className='text-green-900 hover:text-green-600' /></a>
+        <a href="#" aria-label="GitHub"><FaGithub className='text-green-900 w-8 h-8 hover:text-green-600' /></a>
+        <a href="#" aria-label="LinkedIn"><FaLinkedin className='text-green-900 w-8 h-8  hover:text-green-600' /></a>
+        <a href="#" aria-label="Gmail"><BiLogoGmail className='text-green-900 w-8 h-8  hover:text-green-600' /></a>
       </div>
     </nav>
   );

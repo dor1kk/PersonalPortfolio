@@ -10,7 +10,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-primary md:p-16">
+    <div className="bg-primary max-lg:p-4 md:p-16">
       <p className="text-white italic text-xl text-center">Get in touch</p>
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-white">Convey your <span className="text-green-200">ideas to me</span></h1>
