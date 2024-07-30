@@ -4,7 +4,7 @@ import { Slide } from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col md:flex-row max-lg:p-8 max-lg:flex-col-reverse md:p-16 bg-white'>
+    <div id='Home' className='flex flex-col md:flex-row max-lg:p-8 max-lg:flex-col-reverse md:p-16 bg-white'>
       <div className='md:w-1/2 flex flex-col justify-center'>
         <Slide direction="left">
           <p className='font-montserrat text-emerald-700 text-center italic md:text-left'>
@@ -18,7 +18,7 @@ const Hero = () => {
         </Slide>
         <Slide direction="left" delay={200}>
           <p className='text-gray-700 text-center md:text-left w-full md:w-3/4 mt-4 mx-auto md:mx-0'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia necessitatibus veritatis voluptatum laudantium, ut velit autem earum error porro obcaecati quis nemo esse aliquid ipsam aut tempora cupiditate vel.
+            I specialize in creating innovative web applications, software management systems, including a portfolio website, e-commerce platforms, and a fully functional learning management system. Let's turn your ideas into reality.
           </p>
         </Slide>
         <Slide direction="left" delay={300}>

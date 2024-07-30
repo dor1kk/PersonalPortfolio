@@ -16,7 +16,7 @@ const Education = () => {
             <Slide direction="up" delay={200}>
               <div className="shadow-lg p-4">
                 <h3 className="text-2xl font-bold mb-2">High School</h3>
-                <p className="italic mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p className="italic mb-2">Successfully Completed High School!</p>
                 <span className="inline-block bg-green-200 text-green-800 rounded-full px-3 py-1 text-sm font-semibold mr-2">Completed</span>
               </div>
             </Slide>
@@ -62,7 +62,7 @@ const Education = () => {
                 </div>
                 <div className="ml-4 flex-1">
                   <h3 className="text-2xl font-bold">Responsive Web Design by <span className='text-primary'>Free Code Camp </span></h3>
-                  <p className="text-gray-600">Completed [Month, Year]</p>
+                  <p className="text-gray-600">Completed [July, 2023]</p>
                 </div>
                 <div className="flex items-center">
                   <span className="inline-block max-lg:ml-4 bg-green-200 text-green-800 rounded-full px-3 py-1 text-sm font-semibold mr-2">Completed</span>
@@ -77,7 +77,7 @@ const Education = () => {
                 </div>
                 <div className="ml-4 flex-1">
                   <h3 className="text-2xl font-bold"><span className='text-primary'>Cs50</span> 2023 Computer Science Course</h3>
-                  <p className="text-gray-600">Completed [Month, Year]</p>
+                  <p className="text-gray-600">Completed [December , 2023]</p>
                 </div>
                 <div className="flex items-center">
                   <span className="inline-block max-lg:ml-4 bg-green-200 text-green-800 rounded-full px-3 py-1 text-sm font-semibold mr-2">Completed</span>

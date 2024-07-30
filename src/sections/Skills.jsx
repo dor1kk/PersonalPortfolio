@@ -10,7 +10,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='flex flex-col md:flex-row min-h-screen p-4 md:p-8'>
+    <div id='My-Skills' className='flex flex-col md:flex-row min-h-screen p-4 md:p-8'>
       <div className='flex flex-col md:w-1/2'>
         <Slide direction="left">
           <p className='text-primary italic text-xl'>My Skills</p>
@@ -22,7 +22,7 @@ const Skills = () => {
         </Slide>
         <Slide direction="left" delay={200}>
           <p className='w-full md:w-3/5 mt-4 text-gray-600'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis, voluptatem veniam vero perferendis provident, maiores corporis vel fuga iure dicta maxime commodi et minus pariatur voluptates enim quisquam doloremque.
+            With a comprehensive skill set in full-stack development, I bring expertise in both front-end and back-end technologies. My proficiency in the MERN stack ensures efficient and scalable web applications. I also have a strong foundation in UI/UX design, allowing me to create visually appealing and user-friendly interfaces. Additionally, my expertise in database management ensures your data is handled securely and efficiently.
           </p>
         </Slide>
         <Slide direction="left" delay={300}>

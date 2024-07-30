@@ -4,12 +4,42 @@ import Service3 from '../assets/service-3.png'
 import Projekt1 from '../assets/Projekt1.png'
 import Projekt2 from '../assets/Projekt2.png'
 import Projekt3 from '../assets/Projekt3.png'
+import Projekt32 from '../assets/Projekt3-2.png'
+import Projekt33 from '../assets/Projekt3-3.png'
+import Projekt34 from '../assets/Projekt3-4.png'
+import Projekt35 from '../assets/Projekt3-5.png'
+import Projekt36 from '../assets/Projekt3-6.png'
+
 import Projekt4 from '../assets/Projekt4.png'
+import Projekt41 from '../assets/Projekt4-2.png'
+import Projekt42 from '../assets/Projekt4-3.png'
+import Projekt43 from '../assets/Projekt4-3.png'
+import Projekt44 from '../assets/Projekt4-5.png'
+
 import Projekt5 from '../assets/Projekt5.png'
 import Projekt6 from '../assets/Projekt6.png'
 import Projekt7 from '../assets/Projekt7.png'
 import Projekt8 from '../assets/Projekt8.png'
+import Projekt82 from '../assets/Projekt8-2.png'
+import Projekt83 from '../assets/Projekt8-3.png'
+import Projekt84 from '../assets/Projekt8-4.png'
+import Projekt85 from '../assets/Projekt8-5.png'
+
 import Projekt9 from '../assets/Projekt9.png'
+import Projekt92 from '../assets/Projekt9-2.png'
+import Projekt93 from '../assets/Projekt9-3.png'
+import Projekt94 from '../assets/Projekt9-4.png'
+import Projekt95 from '../assets/Projekt9-5.png'
+
+import HealthCareProjectImage from '../assets/HealthCareImage.png'
+import Music from '../assets/MusicAppImage.png'
+import Projekt102 from '../assets/Projekt10-2.png'
+import Projekt101 from '../assets/Projekt10-1.png'
+import Projekt103 from '../assets/Projekt10-3.png'
+import Projekt104 from '../assets/Projekt10-4.png'
+import Projekt105 from '../assets/Projekt10-5.png'
+import Projekt106 from '../assets/Projekt10-6.png'
+
 
 
 import FullStack from '../assets/1.png'
@@ -60,58 +90,98 @@ export const MySkillSet = [
 
   export const MyProjects = [
     {
-      title: 'Health Care System',
-      description: 'A Health care system web app that allows patients to browse doctors set appoinments etc',
-      link: '',
-      image: Projekt9,
+      title: 'Rent A Car System + Real Time Chat',
+      description: 'A car rental system with real-time chat functionality, allowing users to browse available cars and communicate directly with service providers.',
+      link: 'https://rent-a-car-system.netlify.app/',
+      github: 'https://github.com/dor1kk/Rent-A-Car-System',
+      images: [Projekt102, Projekt101, Projekt103, Projekt104, Projekt105, Projekt106],
       status: 'in-progress',
       category: 'Web',
-      technologies: ['React', 'Tailwind', 'Sanity'],
+      technologies: ['React', 'Tailwind', 'Firebase', 'Cloud Firestore'],
       techImage: [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+        'https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png',
+        'https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp',
+        'https://seeklogo.com/images/F/firestore-logo-3828671CC5-seeklogo.com.png'
       ],
-      audience: 'Video content creators and viewers',
-    },
-    {
-      title: 'MusicAL- Listen Free',
-      description: 'A music app that allows users to browse and listen to the songs that they want to listen',
-      link: '',
-      image: Projekt7,
-      status: 'in-progress',
-      category: 'Web',
-      technologies: ['React', 'Tailwind', 'Sanity'],
-      techImage: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
-      ],
-      audience: 'Video content creators and viewers',
+      audience: 'Car renters and rental service providers',
     },
     {
       title: 'Byte Tech Store',
-      description: 'A clone of the popular video-sharing platform, YouTube, featuring video uploads, user profiles, and interactive comments.',
+      description: 'An e-commerce platform inspired by popular tech stores, featuring product listings, user profiles, and interactive comments.',
       link: 'https://bytetechstore.netlify.app/',
-      image: Projekt8,
+      github: 'https://github.com/dor1kk/Tech-Store-E-Commerce',
+      images: [Projekt8, Projekt83, Projekt84, Projekt82, Projekt85],
       status: 'in-progress',
       category: 'Web',
       technologies: ['React', 'Node.js', 'Ant Design'],
       techImage: [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
+        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+        'https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp',
+      ],
+      audience: 'Tech enthusiasts and online shoppers',
+    },
+    {
+      title: 'Health Care Web',
+      description: 'A healthcare web app that allows patients to browse doctors, set appointments, and manage their health information.',
+      link: 'https://health-care-doc.netlify.app/',
+      github: 'https://github.com/dor1kk/Health-Care-System',
+      images: [Projekt9, Projekt92, Projekt93, Projekt94, Projekt95],
+      status: 'in-progress',
+      category: 'Web',
+      technologies: ['React', 'Tailwind', 'Sanity'],
+      techImage: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
+        'https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png',
+        'https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp',
+        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67'
+      ],
+      audience: 'Patients and healthcare providers',
+    },
+    {
+      title: 'Learning Management System',
+      description: 'An LMS platform for online education, featuring course management, user enrollment, and progress tracking.',
+      link: 'https://project-three-link.com',
+      github: 'https://github.com/dor1kk/Learning-Management-System',
+      images: [Projekt32, Projekt33, Projekt34, Projekt3, Projekt35, Projekt36],
+      status: 'finished',
+      category: 'Web',
+      technologies: ['React', 'Node.js', 'MongoDB'],
+      techImage: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
         'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
         'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
         'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+        'https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png',
+        'https://pipedream.com/s.v0/app_1YMhwo/logo/orig'
       ],
-      audience: 'Video content creators and viewers',
+      audience: 'Students and educators',
     },
     {
-      title: 'Youtube Clone App',
-      description: 'A clone of the popular video-sharing platform, YouTube, featuring video uploads, user profiles, and interactive comments.',
+      title: 'MusicAL - Listen Free',
+      description: 'A music app that allows users to browse and listen to their favorite songs.',
+      link: 'https://musicalb.netlify.app/',
+      github: 'https://github.com/dor1kk/MusicApp',
+      images: [Projekt7],
+      status: 'in-progress',
+      category: 'Web',
+      technologies: ['React', 'Tailwind', 'Sanity'],
+      techImage: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
+        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
+        'https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp',
+        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+        'https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg'
+      ],
+      audience: 'Music enthusiasts',
+    },
+    {
+      title: 'YouTube Clone App UI + API',
+      description: 'A UI clone of YouTube with API integration for video uploads, user profiles, and interactive comments.',
       link: 'https://moviesitetv.netlify.app/',
-      image: Projekt5,
+      github: '',
+      images: [Projekt5],
       status: 'in-progress',
       category: 'Web',
       technologies: ['React', 'Node.js', 'Ant Design'],
@@ -125,9 +195,10 @@ export const MySkillSet = [
     },
     {
       title: 'Movie Site App',
-      description: 'An app dedicated to showcasing movies, with features like movie details, ratings, and user reviews.',
+      description: 'An app for showcasing movies, with features like movie details, ratings, and user reviews.',
       link: 'https://moviesitetv.netlify.app/',
-      image: Projekt4,
+      github: 'https://github.com/dor1kk/MovieSite',
+      images: [Projekt4, Projekt41, Projekt42, Projekt43, Projekt44],
       status: 'finished',
       category: 'Web',
       technologies: ['React', 'Bootstrap', 'API Integration'],
@@ -136,99 +207,32 @@ export const MySkillSet = [
         'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
         'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
         'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+        'https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg',
       ],
-      audience: 'Movie enthusiasts and reviewers',
-    },
-   
-    {
-      title: 'Travel Agency Website',
-      description: 'A website for a travel agency offering travel packages, destination guides, and booking options.',
-      link: 'https://traveldksite.netlify.app/',
-      image: Projekt2,
-      status: 'in-progress',
-      category: 'Web',
-      technologies: ['React', 'Ant Design', 'API Integration'],
-      techImage: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
-      ],
-      audience: 'Travel enthusiasts and holiday planners',
-    },
-    {
-      title: 'Burger Shop Website',
-      description: 'A website for a burger shop that includes menus, online ordering, and customer reviews.',
-      link: 'https://project-one-link.com',
-      image: Projekt1,
-      status: 'finished',
-      category: 'Web',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      techImage: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
-      ],
-      audience: 'Food lovers and online orderers',
-    },
-    {
-      title: 'Learning Management System',
-      description: 'An LMS platform for online education, featuring course management, user enrollment, and progress tracking.',
-      link: 'https://project-three-link.com',
-      image: Projekt3,
-      status: 'finished',
-      category: 'Web',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      techImage: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
-      ],
-      audience: 'Students and educators',
-    },
-    {
-      title: 'Find My X',
-      description: 'A location-based app to help users find their lost items with ease.',
-      link: 'https://moviesitetv.netlify.app/',
-      image: Projekt6,
-      status: 'in-progress',
-      category: 'Web',
-      technologies: ['React', 'Firebase', 'Google Maps API'],
-      techImage: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
-      ],
-      audience: 'People who often misplace items',
-    },
-  ];
-
-
-  export const MyServices=[
-    {
-        name:"Web Development",
-        icon:Service2,
-        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia necessitatibus veritatis voluptatum laudantium, ut velit autem earum error porro obcaecati quis nemo esse aliquid ipsam aut tempora cupiditate vel.",
-    },
-    {
-        name:"Software System Development",
-        icon:Service3,
-        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia necessitatibus veritatis voluptatum laudantium, ut velit autem earum error porro obcaecati quis nemo esse aliquid ipsam aut tempora cupiditate vel.",
-    },
-    {
-        name:"UI/UX Design",
-        icon:Service1,
-        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam officia necessitatibus veritatis voluptatum laudantium, ut velit autem earum error porro obcaecati quis nemo esse aliquid ipsam aut tempora cupiditate vel.",
+      audience: 'Movie enthusiasts',
     }
+  ];
+  
 
 
 
 
+  export const MyServices = [
+    {
+        name: "Web Development",
+        icon: Service2,
+        text: "Creating dynamic and responsive websites using the latest technologies to ensure optimal performance and user experience.",
+    },
+    {
+        name: "Software System Development",
+        icon: Service3,
+        text: "Developing robust software systems tailored to meet the specific needs of businesses and organizations.",
+    },
+    {
+        name: "UI/UX Design",
+        icon: Service1,
+        text: "Designing intuitive and engaging user interfaces that enhance the overall user experience and interaction.",
+    }
+];
 
-
-
-  ]
   

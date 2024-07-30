@@ -4,7 +4,7 @@ import { Slide } from 'react-awesome-reveal';
 
 const Services = () => {
   return (
-    <div className='mt-24'>
+    <div id='My-services' className='mt-24'>
       <div className='flex flex-row gap-12 justify-between max-lg:flex-col'>
         {MyServices.map((service, index) => {
           return (
