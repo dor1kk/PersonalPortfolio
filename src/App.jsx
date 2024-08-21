@@ -10,11 +10,11 @@ const App = () => (
     <div className=''>
       <Hero />
     </div>
-    <div className='py-16 px-16'>
+    <div className='py-16 px-16 bg-[#0f172a]'>
       <Services />
     </div>
 
-    <div className='py-16 px-16'>
+    <div className='py-16 px-16 bg-[#0f172a]'>
       <Skills />
     </div>
 
@@ -22,11 +22,11 @@ const App = () => (
       <Projects />
     </div>
 
-    <div className='py-16 px-16'>
+    <div className='py-16 px-16 bg-[#0f172a] '>
       <Education />
     </div>
 
-    <div className=''>
+    <div className='bg-[#0f172a]'>
       <Contact />
     </div>
   </main>

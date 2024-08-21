@@ -1,35 +1,55 @@
 import React from 'react';
-import profileImage from '../assets/profile.png';
+import profileImage from '../assets/Profile.jpg';
 import { Slide } from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
-    <div id='Home' className='flex flex-col md:flex-row max-lg:p-8 max-lg:flex-col-reverse md:p-16 bg-white'>
-      <div className='md:w-1/2 flex flex-col justify-center'>
+    <div id='Home' className='relative flex flex-col md:flex-row max-lg:p-8 max-lg:flex-col-reverse md:p-16 bg-[#0f172a]'>
+
+
+      <div className='md:w-1/2 flex flex-col justify-center relative'>
         <Slide direction="left">
-          <p className='font-montserrat text-emerald-700 text-center italic md:text-left'>
-            Hi I'm Dorajet Kukaj
-          </p>
+          <div className='relative flex flex-row items-center mt-8 mb-8 ml-8 md:ml-0 md:mb-4 md:mt-0'>
+            <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect mr-2 '>
+              &lt;h5&gt;
+            </h5>
+            <h5 className='relative font-montserrat text-white text-center italic md:text-left text-lg  md:text-xl'>
+              Hi I'm Dorajet Kukaj
+            </h5>
+            <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect ml-2'>
+              &lt;/h5&gt;
+            </h5>
+          </div>
         </Slide>
         <Slide direction="left" delay={100}>
-          <h1 className='text-4xl md:text-6xl font-bold font-montserrat text-gray-900 text-center md:text-left'>
+          <h1 className='text-4xl md:text-6xl font-bold font-montserrat text-white text-center md:text-left'>
             A Software <span className='text-primary italic'>Developer,</span> <br /> Infinitely Creative <br /> Solutions
           </h1>
         </Slide>
         <Slide direction="left" delay={200}>
-          <p className='text-gray-700 text-center md:text-left w-full md:w-3/4 mt-4 mx-auto md:mx-0'>
+          <div>
+  
+          <p className='text-gray-500 text-center md:text-left w-full md:w-3/4 mt-4 mx-auto md:mx-0'>
             I specialize in creating innovative web applications, software management systems, including a portfolio website, e-commerce platforms, and a fully functional learning management system. Let's turn your ideas into reality.
           </p>
+        
+            </div>
         </Slide>
         <Slide direction="left" delay={300}>
-          <button className='py-3 flex flex-row justify-center items-center gap-4 px-8 bg-primary mt-8 text-white rounded-2xl max-lg:ml-16 self-center md:self-start'>
-            <span>Get in touch</span>
-            <img src='https://static-00.iconduck.com/assets.00/arrow-right-icon-2048x1281-4p12i3j3.png' className='w-8 h-4' alt='Arrow right' />
-          </button>
-        </Slide>
+          <div className='flex flex-row space-x-4 mt-5'>
+        <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect ml-2'>
+              &lt;button&gt;
+            </h5>
+                      <span className='text-white font-montesrrat italic font-bold cursor-pointer'>Get in touch</span>
+            <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect ml-2'>
+              &lt;/button&gt;
+            </h5>        
+            </div>
+            </Slide>
       </div>
-      <div className='md:w-1/2 flex justify-center mt-8 md:mt-0'>
-        <img src={profileImage} className='filter' alt='Profile' />
+
+      <div className='md:w-[400px] flex justify-center md:ml-24 mt-8 md:mt-0'>
+        <img src={profileImage} className='w-full filter rounded-3xl' alt='Profile' />
       </div>
     </div>
   );

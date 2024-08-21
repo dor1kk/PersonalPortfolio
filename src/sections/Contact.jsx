@@ -10,10 +10,10 @@ const Contact = () => {
   };
 
   return (
-    <div id='My-Contacts' className="bg-primary max-lg:p-4 md:p-16">
+    <div id='My-Contacts' className="bg-[#0f172a] max-lg:p-4 md:p-16">
       <p className="text-white italic text-xl text-center">Get in touch</p>
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-white">Convey your <span className="text-green-200">ideas to me</span></h1>
+        <h1 className="text-4xl font-bold text-white">Convey your <span className="text-primary">ideas to me</span></h1>
     
       </div>
       <div className="flex flex-wrap -mx-4">

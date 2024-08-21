@@ -13,3 +13,6 @@ body {
 }
 
 
+.glow-effect {
+  text-shadow: 0 0 5px #16b7ea, 0 0 10px #16b7ea, 0 0 15px #16b7ea, 0 0 20px #16b7ea;
+}
