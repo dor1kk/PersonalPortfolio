@@ -1,53 +1,11 @@
-
-import React from 'react'
-import Service1 from '../assets/service-1.png'
-import Service2 from '../assets/service-2.png'
-import Service3 from '../assets/service-3.png'
-import Projekt1 from '../assets/Projekt1.png'
-import Projekt2 from '../assets/Projekt2.png'
-import Projekt3 from '../assets/Projekt3.png'
-import Projekt32 from '../assets/Projekt3-2.png'
-import Projekt33 from '../assets/Projekt3-3.png'
-import Projekt34 from '../assets/Projekt3-4.png'
-import Projekt35 from '../assets/Projekt3-5.png'
-import Projekt36 from '../assets/Projekt3-6.png'
-
-import Projekt4 from '../assets/Projekt4.png'
-import Projekt41 from '../assets/Projekt4-2.png'
-import Projekt42 from '../assets/Projekt4-3.png'
-import Projekt43 from '../assets/Projekt4-3.png'
-import Projekt44 from '../assets/Projekt4-5.png'
-
-import Projekt5 from '../assets/Projekt5.png'
-import Projekt6 from '../assets/Projekt6.png'
-import Projekt7 from '../assets/Projekt7.png'
-import Projekt8 from '../assets/Projekt8.png'
-import Projekt82 from '../assets/Projekt8-2.png'
-import Projekt83 from '../assets/Projekt8-3.png'
-import Projekt84 from '../assets/Projekt8-4.png'
-import Projekt85 from '../assets/Projekt8-5.png'
-
-import Projekt9 from '../assets/Projekt9.png'
-import Projekt92 from '../assets/Projekt9-2.png'
-import Projekt93 from '../assets/Projekt9-3.png'
-import Projekt94 from '../assets/Projekt9-4.png'
-import Projekt95 from '../assets/Projekt9-5.png'
-
-import HealthCareProjectImage from '../assets/HealthCareImage.png'
-import Music from '../assets/MusicAppImage.png'
-import Projekt102 from '../assets/Projekt10-2.png'
-import Projekt101 from '../assets/Projekt10-1.png'
-import Projekt103 from '../assets/Projekt10-3.png'
-import Projekt104 from '../assets/Projekt10-4.png'
-import Projekt105 from '../assets/Projekt10-5.png'
-import Projekt106 from '../assets/Projekt10-6.png'
-
 import RentACarMockup from '../assets/RentACarMockup.png'
 import LMSMockup from '../assets/LmsMockeduo.jpg'
 import ByteMockup from '../assets/ByteTechMockup.jpg'
 import HealthCareMockup from '../assets/HealthCareMockup.jpg'
 import MusicalMockup from '../assets/MusicalMockup.jpg'
-import MovieAppMockup from '../assets/MoviAppMockup.jpg'
+import MovieAppMockup from '../assets/MovieMockup.png'
+import DeliveryApp from '../assets/DeliveryAppImage.png'
+import TravelMockup from '../assets/TravelMockup.png'
 
 
 
@@ -81,11 +39,12 @@ export const technologies = [
 
 
   export const MyProjects = [
+   
     {
       title: 'Rent A Car System ',
       description: 'A car rental system with real-time chat functionality, allowing users to browse available cars and communicate directly with service providers.',
       link: 'https://chatapp-430709.web.app',
-      github: 'https://github.com/dor1kk/Rent-A-Car-System',
+      github: 'https://github.com/dor1kk/Rent-A-Car-System-Management',
       images: [RentACarMockup],
       status: 'in-progress',
       category: 'Web',
@@ -98,6 +57,25 @@ export const technologies = [
       ],
       audience: 'Car renters and rental service providers',
     },
+    
+    {
+      "title": "Fast Food Delivery App",
+      "description": "A fast food delivery platform that allows users to easily browse menu, place orders, and track deliveries in real-time. ",
+      "link": "https://chatapp-430709.web.app",
+      "github": "https://github.com/dor1kk/Fast-Food-Delivery-App",
+      "images": [DeliveryApp],
+      "status": "in-progress",
+      "category": "Web",
+      "technologies": ["React", "Tailwind", "Firebase"],
+      "techImage": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s",
+        "https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png",
+        "https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp",
+        "https://seeklogo.com/images/F/firestore-logo-3828671CC5-seeklogo.com.png"
+      ],
+      "audience": "Fast food customers and delivery service providers"
+    },
+    
     {
       title: 'Learning Management System',
       description: 'An LMS platform for online education, featuring course management, user enrollment, and progress tracking.',
@@ -117,6 +95,7 @@ export const technologies = [
       ],
       audience: 'Students and educators',
     },
+    
     {
       title: 'Byte Tech Store',
       description: 'An e-commerce platform inspired by popular tech stores, featuring product listings, user profiles, and interactive comments.',
@@ -171,14 +150,32 @@ export const technologies = [
     },
  
     {
-      title: 'Movie Site App',
+      title: 'Movie Browser Website',
       description: 'An app for showcasing movies, with features like movie details, ratings, and user reviews.',
       link: 'https://moviesitetv.netlify.app/',
       github: 'https://github.com/dor1kk/MovieSite',
       images: [MovieAppMockup],
       status: 'finished',
       category: 'Web',
-      technologies: ['React', 'Bootstrap', 'API Integration'],
+      technologies: ['HTML', 'Javascript', 'PHP', 'MySQL'],
+      techImage: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
+        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
+        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
+        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
+        'https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg',
+      ],
+      audience: 'Movie enthusiasts',
+    },
+    {
+      title: 'Travel Agency Website',
+      description: 'An app for showcasing movies, with features like movie details, ratings, and user reviews.',
+      link: '',
+      github: 'https://github.com/Lindi06/Projekti-Travel-Agency',
+      images: [TravelMockup],
+      status: 'finished',
+      category: 'Web',
+      technologies: ['HTML', 'Javascript', 'PHP', 'MySQL'],
       techImage: [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
         'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',

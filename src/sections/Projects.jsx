@@ -15,7 +15,11 @@ const Projects = () => {
             <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect ml-2'>
               &lt;/h1&gt;
             </h5>
-      </div>        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      </div>     
+      
+      
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {MyProjects.map((project) => (
             <div
               key={project.title}

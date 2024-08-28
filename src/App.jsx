@@ -2,6 +2,7 @@ import React from 'react';
 import { Hero, Header, Skills, Projects, Footer, Contact } from './sections/Index';
 import Services from './sections/Services';
 import Education from './sections/About';
+import GithubCalendar from './sections/GithubCalendar';
 
 const App = () => (
   <main>
@@ -10,8 +11,12 @@ const App = () => (
     <div className=''>
       <Hero />
     </div>
+   
     <div className='py-16 px-16 bg-[#0f172a]'>
       <Services />
+    </div>
+    <div>
+      <GithubCalendar />
     </div>
 
     <div className='py-16 px-16 bg-[#0f172a]'>
