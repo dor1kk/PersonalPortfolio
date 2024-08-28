@@ -4,22 +4,24 @@ import { MyProjects } from '../constants'; // Adjust the import path as needed
 const Projects = () => {
   return (
     <section className="py-12 bg-gray-100">
-      <div className="p-12">
-      <div className='relative flex flex-row items-center  mb-32 ml-8 space-x-4 md:ml-0 md:mb-24 md:mt-0'>
-            <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect mr-2'>
-              &lt;h1&gt;
-            </h5>
-            <h5 className='relative font-montserrat text-[#1e293b]  text-center italic md:text-left text-3xl font-bold md:text-4xl'>
-              My <span className='text-[#16b7ea] '>Projects</span> 
-            </h5>
-            <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect ml-2'>
-              &lt;/h1&gt;
-            </h5>
+      <div className="px-16 mx-auto ">
+        <div className='relative flex flex-row items-center mb-12 space-x-4'>
+          <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect'>
+            &lt;h1&gt;
+          </h5>
+          <h5 className='relative font-montserrat text-[#1e293b] text-center italic text-3xl font-bold'>
+            My <span className='text-[#16b7ea]'>Projects</span>
+          </h5>
+          <h5 className='text-[#16b7ea] text-2xl opacity-75 glow-effect'>
+            &lt;/h1&gt;
+          </h5>
+        </div>
 
-      </div>     
-      
-      
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <p className="text-gray-600 mb-8 text-center">
+          *Note: Most of the projects have a live demo available by clicking 'View Project', but not all of them do, you can access the code by clicking 'Github'.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {MyProjects.map((project) => (
             <div
               key={project.title}

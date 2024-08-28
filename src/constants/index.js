@@ -31,6 +31,7 @@ export const technologies = [
     { icon: "https://miro.medium.com/v2/resize:fit:1400/1*dU4B5Jg2opVXRmGhiBYXdQ.png", name: 'MySql', color: '#f5bcbc' },
     { icon: "https://datawarehouse.io/wp-content/uploads/2020/04/MSSQL-1.png", name: 'MSSql', color: '#f3bc3e' },
     { icon: "https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png", name: 'MongoDB', color: '#f3bc3e' },
+    { icon: "https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png", name: 'Jest', color: '#f3bc3e' },
   
   
   
@@ -153,11 +154,11 @@ export const technologies = [
       title: 'Movie Browser Website',
       description: 'An app for showcasing movies, with features like movie details, ratings, and user reviews.',
       link: 'https://moviesitetv.netlify.app/',
-      github: 'https://github.com/dor1kk/MovieSite',
+      github: 'https://github.com/dor1kk/MovieSite/tree/master',
       images: [MovieAppMockup],
       status: 'finished',
       category: 'Web',
-      technologies: ['HTML', 'Javascript', 'PHP', 'MySQL'],
+      technologies: ['HTML','CSS', 'Javascript', 'PHP',],
       techImage: [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
         'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
@@ -169,22 +170,23 @@ export const technologies = [
     },
     {
       title: 'Travel Agency Website',
-      description: 'An app for showcasing movies, with features like movie details, ratings, and user reviews.',
+      description: 'A platform designed to showcase various travel packages, including details on destinations, prices, and features.',
       link: '',
       github: 'https://github.com/Lindi06/Projekti-Travel-Agency',
       images: [TravelMockup],
       status: 'finished',
       category: 'Web',
-      technologies: ['HTML', 'Javascript', 'PHP', 'MySQL'],
+      technologies: ['HTML', 'JavaScript', 'PHP', 'MySQL'],
       techImage: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',
-        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67',
-        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',
-        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png',
-        'https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s',  // HTML
+        'https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67', // PHP
+        'https://cdn.iconscout.com/icon/free/png-256/free-css-131-722685.png',  // CSS
+        'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-tx16mhk6.png', // Ant Design
+        'https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg', // API
       ],
-      audience: 'Movie enthusiasts',
+      audience: 'Travel enthusiasts and potential customers looking for travel packages',
     }
+    
   ];
   
 
