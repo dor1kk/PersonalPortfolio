@@ -3,6 +3,7 @@ import { Hero, Header, Skills, Projects, Footer, Contact } from './sections/Inde
 import Services from './sections/Services';
 import Education from './sections/About';
 import GithubCalendar from './sections/GithubCalendar';
+import Experience from './sections/Experience';
 
 const App = () => (
   <main>
@@ -29,6 +30,9 @@ const App = () => (
 
     <div className='py-16 px-16 bg-[#0f172a] '>
       <Education />
+    </div>
+    <div>
+      <Experience />
     </div>
 
     <div className='bg-[#0f172a]'>

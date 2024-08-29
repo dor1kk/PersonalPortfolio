@@ -1,27 +1,52 @@
 import React from 'react';
 import { MyServices } from '../constants';
-import { Slide } from 'react-awesome-reveal';
+import { motion } from 'framer-motion';
+
+const ServiceCard = ({ service, index }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: index * 0.1 }}
+    className="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+  >
+    <div className="p-6 flex flex-col items-center text-center h-full">
+      <div className="w-16 h-16 bg-sky-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-sky-800 transition-colors duration-300">
+        <img src={service.icon} className="w-8 h-8" alt={`${service.name} icon`} />
+      </div>
+      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors duration-300">
+        {service.name}
+      </h3>
+      <p className="text-gray-400 flex-grow">{service.text}</p>
+    </div>
+  </motion.div>
+);
 
 const Services = () => {
   return (
-    <div id='My-services' className='mt-24 flex flex-col '>
+    <section id="My-services" className="py-20">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl font-bold text-white mb-4">
+            My <span className="text-sky-400">Services</span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            I offer a range of services to help bring your digital projects to life
+          </p>
+        </motion.div>
 
-     
-      <div className='flex flex-row gap-12 justify-between max-lg:flex-col'>
-        {MyServices.map((service, index) => {
-          return (
-            <Slide key={service.name} direction="left" delay={index * 100}>
-              <div className='shadow-3xl bg-[#1e293b]  rounded-3xl flex flex-col gap-4 justify-center items-center p-4'>
-                <img src={service.icon} className='w-16 mt-[-50px] h-16 rounded-full' alt={`${service.name} icon`} />
-                <h1 className='text-xl font-bold italic font-montserrat text-white'>{service.name}</h1>
-                <p className='font-montserrat text-gray-200'>{service.text}</p>
-              </div>
-            </Slide>
-          );
-        })}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {MyServices.map((service, index) => (
+            <ServiceCard key={service.name} service={service} index={index} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Services;
