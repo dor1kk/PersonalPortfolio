@@ -137,18 +137,19 @@ const Hero = () => {
                 delay={0.5}
                 className="inline-block mr-4"
               />
+              <br className="block sm:hidden" />
               <span className="relative inline-block">
                 <TypewriterText
-                  text="Dorajet"
-                  speed={100}
+                  text="Dorajet Kukaj"
+                  speed={80}
                   delay={1.5}
                   className="text-primary"
                 />
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
-                  transition={{ duration: 1, delay: 2.5 }}
-                  className="absolute bottom-2 left-0 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"
+                  transition={{ duration: 1, delay: 4 }}
+                  className="absolute bottom-2 left-0 h-1 bg-gradient-to-r from-primary via-purple-500 to-pink-500 rounded-full"
                 />
                 {/* Sparkle effects */}
                 <motion.div
@@ -156,7 +157,7 @@ const Hero = () => {
                     scale: [1, 1.2, 1],
                     rotate: [0, 180, 360]
                   }}
-                  transition={{ duration: 2, repeat: Infinity, delay: 3 }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 4.5 }}
                   className="absolute -top-2 -right-2"
                 >
                   <Sparkles className="w-6 h-6 text-yellow-400" />
