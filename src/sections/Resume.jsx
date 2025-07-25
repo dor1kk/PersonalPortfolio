@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { 
-  Download, 
-  User, 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Download,
+  User,
+  Mail,
+  Phone,
+  MapPin,
   Calendar,
   Briefcase,
   GraduationCap,
@@ -14,11 +14,13 @@ import {
   Star,
   Github,
   Linkedin,
-  Globe
+  Globe,
+  Printer
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import MagneticButton from '../components/MagneticButton';
 import AnimatedText from '../components/AnimatedText';
+import { generateResumePDF, printResume } from '../utils/pdfGenerator';
 
 const Resume = () => {
   const ref = useRef(null);
