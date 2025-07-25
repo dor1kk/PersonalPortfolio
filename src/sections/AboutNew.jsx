@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Code2, Briefcase, GraduationCap, Heart, Coffee, Target } from 'lucide-react';
 import { cn, fadeInUp, staggerContainer } from '../lib/utils';
+import EnhancedBackground from '../components/EnhancedBackground';
+import FloatingElements from '../components/FloatingElements';
+import ShiningBorder from '../components/ShiningBorder';
 
 const About = () => {
   const ref = useRef(null);
