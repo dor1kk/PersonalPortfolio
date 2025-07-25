@@ -128,9 +128,17 @@ const createPrintableResume = (resumeData) => {
         </h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
           ${resumeData.projects.map(project => `
-            <li style="display: flex; align-items: flex-start; color: #4b5563; margin-bottom: 10px;">
-              <span style="color: #3b82f6; margin-right: 10px; font-weight: bold;">•</span>
-              <span style="font-size: 14px;">${project}</span>
+            <li style="color: #4b5563; margin-bottom: 15px; border: 1px solid #e5e7eb; padding: 10px; border-radius: 8px;">
+              <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 5px;">
+                <span style="font-weight: bold; color: #1f2937; font-size: 16px;">${typeof project === 'object' ? project.name : project}</span>
+                ${typeof project === 'object' && project.impact ? `<span style="color: #059669; font-size: 12px; font-weight: 500;">${project.impact}</span>` : ''}
+              </div>
+              ${typeof project === 'object' && project.description ? `<p style="font-size: 14px; color: #6b7280; margin: 5px 0;">${project.description}</p>` : ''}
+              ${typeof project === 'object' && project.tech ? `
+                <div style="margin-top: 5px;">
+                  ${project.tech.map(tech => `<span style="font-size: 11px; background: #f3f4f6; color: #374151; padding: 2px 6px; border-radius: 3px; margin-right: 5px;">${tech}</span>`).join('')}
+                </div>
+              ` : ''}
             </li>
           `).join('')}
         </ul>
