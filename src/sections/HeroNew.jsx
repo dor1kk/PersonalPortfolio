@@ -292,14 +292,34 @@ const Hero = () => {
               </motion.div>
 
               {/* Profile image */}
-              <div className="relative w-80 h-80 rounded-full border-4 border-white dark:border-gray-800 shadow-2xl overflow-hidden">
-                <img
-                  src={profileImage}
-                  alt="Dorajet Kukaj"
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-              </div>
+              <ShiningBorder
+                intensity="medium"
+                color="gradient"
+                variant="pulse"
+                className="rounded-full"
+              >
+                <div className="relative w-80 h-80 rounded-full border-4 border-white/80 dark:border-gray-800/80 shadow-2xl overflow-hidden backdrop-blur-sm">
+                  <img
+                    src={profileImage}
+                    alt="Dorajet Kukaj"
+                    className="w-full h-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+
+                  {/* Holographic overlay */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-transparent to-purple-500/20"
+                    animate={{
+                      opacity: [0.2, 0.5, 0.2],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
+                </div>
+              </ShiningBorder>
 
               {/* Floating elements */}
               <motion.div
