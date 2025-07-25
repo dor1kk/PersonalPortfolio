@@ -1,21 +1,16 @@
-// Correct way to export multiple components
+// Modern portfolio components
+import Hero from "./HeroNew";
+import About from "./AboutNew";
+import Skills from "./SkillsNew";
+import Experience from "./ExperienceNew";
+import Projects from "./ProjectsNew";
+import Contact from "./ContactNew";
 
-// Import statements for components
-import About from "./About";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Header from "./Header";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Skills from "./Skills";
-
-// Export each component individually
 export {
   Hero,
-  Header,
   About,
   Skills,
+  Experience,
   Projects,
-  Footer,
   Contact
 };
