@@ -23,6 +23,9 @@ export const ThemeProvider = ({ children }) => {
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
     localStorage.setItem('theme', theme);
+
+    // Also set data attribute for better CSS targeting
+    root.setAttribute('data-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
