@@ -18,21 +18,25 @@ const App = () => {
     <ThemeProvider>
       <div className="relative">
         <LoadingScreen />
+        <AnimatedCursor />
         <Navigation />
 
-        <main className="pt-16">
+        <main className="pt-16 relative">
+          <ParticleBackground density={30} />
           <Hero />
           <About />
           <Skills />
           <Experience />
           <Projects />
+          <Resume />
           <Contact />
         </main>
 
         <ScrollToTop />
 
-        {/* Background gradient overlay */}
+        {/* Enhanced background gradient overlay */}
         <div className="fixed inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 pointer-events-none -z-10" />
+        <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-purple-500/5 pointer-events-none -z-10" />
       </div>
     </ThemeProvider>
   );
