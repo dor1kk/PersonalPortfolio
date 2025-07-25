@@ -1,10 +1,16 @@
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
-export const generateResumePDF = async () => {
+export const generateResumePDF = async (resumeData = null) => {
   try {
     // Find the resume element
-    const resumeElement = document.getElementById('resume-content');
+    let resumeElement = document.getElementById('resume-content');
+
+    // If resumeData is provided, create a temporary printable version
+    if (resumeData) {
+      resumeElement = createPrintableResume(resumeData);
+    }
+
     if (!resumeElement) {
       console.error('Resume element not found');
       return;
