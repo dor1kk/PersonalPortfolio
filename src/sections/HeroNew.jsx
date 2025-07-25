@@ -188,16 +188,23 @@ const Hero = () => {
               className="flex flex-wrap gap-4 mb-8 justify-center lg:justify-start"
             >
               {skillIcons.map((skill, index) => (
-                <motion.div
+                <ShiningBorder
                   key={skill.label}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  className="flex items-center space-x-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700"
+                  intensity="low"
+                  color="primary"
+                  variant="glow"
+                  className="rounded-lg"
                 >
-                  <skill.icon className={cn("w-5 h-5", skill.color)} />
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    {skill.label}
-                  </span>
-                </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, y: -5 }}
+                    className="flex items-center space-x-2 px-4 py-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+                  >
+                    <skill.icon className={cn("w-5 h-5", skill.color)} />
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      {skill.label}
+                    </span>
+                  </motion.div>
+                </ShiningBorder>
               ))}
             </motion.div>
 
