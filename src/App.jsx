@@ -3,11 +3,14 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import Navigation from './components/Navigation';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollToTop from './components/ScrollToTop';
+import AnimatedCursor from './components/AnimatedCursor';
+import ParticleBackground from './components/ParticleBackground';
 import Hero from './sections/HeroNew';
 import About from './sections/AboutNew';
 import Skills from './sections/SkillsNew';
 import Experience from './sections/ExperienceNew';
 import Projects from './sections/ProjectsNew';
+import Resume from './sections/Resume';
 import Contact from './sections/ContactNew';
 
 const App = () => {
