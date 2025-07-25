@@ -56,24 +56,18 @@ const About = () => {
   };
 
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       ref={ref}
       className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden"
     >
-      {/* Background decoration */}
-      <div className="absolute inset-0">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-          className="absolute top-20 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-20 left-20 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"
-        />
-      </div>
+      {/* Enhanced Background Effects */}
+      <EnhancedBackground
+        density={25}
+        showStars={true}
+        variant="light"
+      />
+      <FloatingElements section="about" density="low" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
