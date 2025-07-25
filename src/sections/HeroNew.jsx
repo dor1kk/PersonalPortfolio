@@ -250,18 +250,14 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full border-2 border-dotted border-purple-500/30 scale-110"></div>
               </motion.div>
 
-              {/* Profile image placeholder - replace with actual image */}
-              <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-purple-500/20 border-4 border-white dark:border-gray-800 shadow-2xl overflow-hidden">
+              {/* Profile image */}
+              <div className="relative w-80 h-80 rounded-full border-4 border-white dark:border-gray-800 shadow-2xl overflow-hidden">
+                <img
+                  src={profileImage}
+                  alt="Dorajet Kukaj"
+                  className="w-full h-full object-cover object-center"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-                <div className="flex items-center justify-center h-full text-6xl font-bold text-primary/50">
-                  DK
-                </div>
-                {/* You can replace this with your actual profile image */}
-                {/* <img 
-                  src="/path-to-your-image.jpg" 
-                  alt="Dorajet Kukaj" 
-                  className="w-full h-full object-cover"
-                /> */}
               </div>
 
               {/* Floating elements */}
