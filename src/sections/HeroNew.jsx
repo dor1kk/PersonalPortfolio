@@ -11,11 +11,27 @@ const Hero = () => {
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
 
+  // Mouse tracking for parallax effect
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const rotateX = useTransform(mouseY, [-300, 300], [10, -10]);
+  const rotateY = useTransform(mouseX, [-300, 300], [-10, 10]);
+
   useEffect(() => {
     if (isInView) {
       controls.start("animate");
     }
   }, [isInView, controls]);
+
+  const handleMouseMove = (e) => {
+    if (!ref.current) return;
+    const rect = ref.current.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    mouseX.set(e.clientX - centerX);
+    mouseY.set(e.clientY - centerY);
+  };
 
   const containerVariants = {
     animate: {
