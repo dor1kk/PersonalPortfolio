@@ -134,23 +134,33 @@ const About = () => {
             {/* Highlights */}
             <motion.div variants={itemVariants} className="space-y-4">
               {highlights.map((highlight, index) => (
-                <motion.div
+                <ShiningBorder
                   key={highlight.title}
-                  whileHover={{ scale: 1.02, x: 10 }}
-                  className="flex items-start space-x-4 p-4 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-primary/30 transition-all duration-300"
+                  intensity="low"
+                  color="primary"
+                  variant="glow"
+                  className="rounded-lg"
                 >
-                  <div className="flex-shrink-0 p-2 bg-primary/10 rounded-lg">
-                    <highlight.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
-                      {highlight.title}
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      {highlight.description}
-                    </p>
-                  </div>
-                </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.02, x: 10 }}
+                    className="flex items-start space-x-4 p-4 rounded-lg bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/30 transition-all duration-300"
+                  >
+                    <motion.div
+                      className="flex-shrink-0 p-2 bg-primary/10 rounded-lg"
+                      whileHover={{ scale: 1.1, rotate: 10 }}
+                    >
+                      <highlight.icon className="w-6 h-6 text-primary" />
+                    </motion.div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+                        {highlight.title}
+                      </h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {highlight.description}
+                      </p>
+                    </div>
+                  </motion.div>
+                </ShiningBorder>
               ))}
             </motion.div>
           </motion.div>
