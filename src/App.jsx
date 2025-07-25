@@ -10,7 +10,7 @@ import About from './sections/AboutNew';
 import Skills from './sections/SkillsNew';
 import Experience from './sections/ExperienceNew';
 import Projects from './sections/ProjectsNew';
-import Resume from './sections/Resume';
+import Resume from './sections/ResumeFuturistic';
 import Contact from './sections/ContactNew';
 
 const App = () => {
