@@ -255,12 +255,12 @@ const Projects = () => {
               >
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-purple-500/20 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-                  <div className="flex items-center justify-center h-full">
-                    <div className="text-4xl font-bold text-primary/50">
-                      {project.title.split(' ').map(word => word[0]).join('').slice(0, 2)}
-                    </div>
-                  </div>
                   
                   {/* Overlay with actions */}
                   <motion.div
