@@ -35,7 +35,7 @@ const Skills = () => {
         { name: 'Node.js', level: 85, icon: 'https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png' },
         { name: 'GraphQL', level: 80, icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png' },
         { name: 'Prisma', level: 75, icon: 'https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png' },
-        { name: 'Hasura', level: 70, icon: 'https://hasura.io/brand-assets/hasura-logo-mark.png' },
+        { name: 'Hasura', level: 70, icon: 'https://docs.hasura.io/img/hasura_icon_black.svg' },
         { name: 'MongoDB', level: 75, icon: 'https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png' },
         { name: 'MySQL', level: 80, icon: 'https://miro.medium.com/v2/resize:fit:1400/1*dU4B5Jg2opVXRmGhiBYXdQ.png' },
         { name: 'PHP', level: 70, icon: 'https://cdn.iconscout.com/icon/free/png-256/php-2752101-2284918.png' }
