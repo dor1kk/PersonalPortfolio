@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Download, Github, Linkedin, Mail } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import { cn } from '../lib/utils';
+import { downloadResume } from '../utils/resumeDownload';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
