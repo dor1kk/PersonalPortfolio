@@ -75,44 +75,27 @@ const Hero = () => {
       onMouseMove={handleMouseMove}
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden"
     >
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute top-20 left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [360, 180, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute bottom-20 right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            y: [-20, 20, -20],
-          }}
-          transition={{
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-1/2 left-1/4 w-32 h-32 bg-green-500/10 rounded-full blur-2xl"
-        />
-      </div>
+      {/* Enhanced Background Effects */}
+      <EnhancedBackground
+        density={40}
+        showStars={true}
+        showGrid={true}
+        variant="hero"
+      />
+      <FloatingElements section="hero" density="medium" />
+
+      {/* Professional Shining Overlay */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-transparent"
+        animate={{
+          opacity: [0.3, 0.6, 0.3],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
