@@ -112,7 +112,7 @@ const createPrintableResume = (resumeData) => {
               <div style="display: flex; flex-wrap: wrap; gap: 5px;">
                 ${skills.map(skill => `
                   <span style="font-size: 12px; background: #f3f4f6; color: #374151; padding: 4px 8px; border-radius: 4px; border: 1px solid #e5e7eb;">
-                    ${skill}
+                    ${typeof skill === 'object' ? skill.name : skill} ${typeof skill === 'object' ? `(${skill.level}%)` : ''}
                   </span>
                 `).join('')}
               </div>
