@@ -14,8 +14,9 @@ const App = () => {
   return (
     <ThemeProvider>
       <div className="relative">
+        <LoadingScreen />
         <Navigation />
-        
+
         <main className="pt-16">
           <Hero />
           <About />
@@ -24,6 +25,8 @@ const App = () => {
           <Projects />
           <Contact />
         </main>
+
+        <ScrollToTop />
 
         {/* Background gradient overlay */}
         <div className="fixed inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 pointer-events-none -z-10" />
