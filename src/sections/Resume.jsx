@@ -120,7 +120,7 @@ const Resume = () => {
   };
 
   const handleDownload = async () => {
-    await generateResumePDF();
+    await generateResumePDF(resumeData);
   };
 
   const handlePrint = () => {
