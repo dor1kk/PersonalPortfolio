@@ -246,14 +246,24 @@ const Resume = () => {
                 ))}
               </div>
 
-              {/* Download Button */}
-              <MagneticButton
-                onClick={handleDownload}
-                className="w-full bg-gradient-to-r from-primary to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Download PDF
-              </MagneticButton>
+              {/* Download Buttons */}
+              <div className="space-y-3">
+                <MagneticButton
+                  onClick={handleDownload}
+                  className="w-full bg-gradient-to-r from-primary to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center"
+                >
+                  <Download className="w-5 h-5 mr-2" />
+                  Download PDF
+                </MagneticButton>
+
+                <MagneticButton
+                  onClick={handlePrint}
+                  className="w-full bg-gradient-to-r from-gray-600 to-gray-700 text-white py-2 px-6 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center text-sm"
+                >
+                  <Printer className="w-4 h-4 mr-2" />
+                  Print Resume
+                </MagneticButton>
+              </div>
             </motion.div>
           </motion.div>
 
