@@ -1,6 +1,147 @@
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
+// Helper function to create a printable resume element
+const createPrintableResume = (resumeData) => {
+  const tempContainer = document.createElement('div');
+  tempContainer.id = 'temp-resume-content';
+  tempContainer.style.cssText = `
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 800px;
+    background: white;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    color: #1f2937;
+    padding: 40px;
+    line-height: 1.6;
+  `;
+
+  tempContainer.innerHTML = `
+    <div style="max-width: 800px; margin: 0 auto; background: white; color: #1f2937;">
+      <!-- Header -->
+      <div style="text-align: center; margin-bottom: 40px; border-bottom: 2px solid #e5e7eb; padding-bottom: 30px;">
+        <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 8px; color: #1f2937; margin: 0 0 8px 0;">
+          ${resumeData.personal.name}
+        </h1>
+        <h2 style="font-size: 20px; color: #3b82f6; font-weight: 600; margin-bottom: 20px; margin: 0 0 20px 0;">
+          ${resumeData.personal.title}
+        </h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 14px; color: #6b7280;">
+          <div>📧 ${resumeData.personal.email}</div>
+          <div>📱 ${resumeData.personal.phone}</div>
+          <div>📍 ${resumeData.personal.location}</div>
+          <div>🌐 ${resumeData.personal.website}</div>
+          <div>💼 ${resumeData.personal.linkedin}</div>
+          <div>⚡ ${resumeData.personal.github}</div>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin: 0 0 15px 0;">
+          Professional Summary
+        </h3>
+        <p style="color: #4b5563; line-height: 1.7; margin: 0;">
+          ${resumeData.summary}
+        </p>
+      </div>
+
+      <!-- Experience -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin: 0 0 15px 0;">
+          Professional Experience
+        </h3>
+        ${resumeData.experience.map(exp => `
+          <div style="margin-bottom: 30px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+              <div>
+                <h4 style="font-size: 18px; font-weight: 600; color: #1f2937; margin: 0 0 5px 0;">${exp.title}</h4>
+                <p style="color: #3b82f6; font-weight: 500; margin: 0;">${exp.company} • ${exp.location}</p>
+              </div>
+              <div style="color: #6b7280; font-size: 14px;">
+                📅 ${exp.period}
+              </div>
+            </div>
+            <ul style="margin-left: 20px; color: #4b5563;">
+              ${exp.achievements.map(achievement => `
+                <li style="margin-bottom: 8px; font-size: 14px;">${achievement}</li>
+              `).join('')}
+            </ul>
+          </div>
+        `).join('')}
+      </div>
+
+      <!-- Education -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin: 0 0 15px 0;">
+          Education
+        </h3>
+        ${resumeData.education.map(edu => `
+          <div style="margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+              <div>
+                <h4 style="font-size: 18px; font-weight: 600; color: #1f2937; margin: 0 0 5px 0;">${edu.degree}</h4>
+                <p style="color: #10b981; font-weight: 500; margin: 0;">${edu.institution} • ${edu.location}</p>
+              </div>
+              <div style="color: #6b7280; font-size: 14px;">
+                📅 ${edu.period}
+              </div>
+            </div>
+            <ul style="margin-left: 20px; color: #4b5563;">
+              ${edu.details.map(detail => `
+                <li style="margin-bottom: 5px; font-size: 14px;">${detail}</li>
+              `).join('')}
+            </ul>
+          </div>
+        `).join('')}
+      </div>
+
+      <!-- Skills -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin: 0 0 15px 0;">
+          Technical Skills
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+          ${Object.entries(resumeData.skills).map(([category, skills]) => `
+            <div>
+              <h4 style="font-weight: 600; color: #1f2937; margin-bottom: 10px; text-transform: capitalize; margin: 0 0 10px 0;">
+                ${category} Development
+              </h4>
+              <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                ${skills.map(skill => `
+                  <span style="font-size: 12px; background: #f3f4f6; color: #374151; padding: 4px 8px; border-radius: 4px; border: 1px solid #e5e7eb;">
+                    ${skill}
+                  </span>
+                `).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Key Projects -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin: 0 0 15px 0;">
+          ⭐ Key Projects
+        </h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          ${resumeData.projects.map(project => `
+            <li style="display: flex; align-items: flex-start; color: #4b5563; margin-bottom: 10px;">
+              <span style="color: #3b82f6; margin-right: 10px; font-weight: bold;">•</span>
+              <span style="font-size: 14px;">${project}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(tempContainer);
+  return tempContainer;
+};
+
 export const generateResumePDF = async (resumeData = null) => {
   try {
     // Find the resume element
