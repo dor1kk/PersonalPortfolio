@@ -1,44 +1,33 @@
 import React from 'react';
-import { Hero, Header, Skills, Projects, Footer, Contact } from './sections/Index';
-import Services from './sections/Services';
-import Education from './sections/About';
-import GithubCalendar from './sections/GithubCalendar';
-import Experience from './sections/Experience';
+import { ThemeProvider } from './contexts/ThemeContext';
+import Navigation from './components/Navigation';
+import Hero from './sections/HeroNew';
+import About from './sections/AboutNew';
+import Skills from './sections/SkillsNew';
+import Experience from './sections/ExperienceNew';
+import Projects from './sections/ProjectsNew';
+import Contact from './sections/ContactNew';
 
-const App = () => (
-  <main>
-    <Header />
+const App = () => {
+  return (
+    <ThemeProvider>
+      <div className="relative">
+        <Navigation />
+        
+        <main className="pt-16">
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
 
-    <div className=''>
-      <Hero />
-    </div>
-   
-    <div className='py-16 px-16 bg-[#0f172a]'>
-      <Services />
-    </div>
-    <div>
-      <GithubCalendar />
-    </div>
-
-    <div className='py-16 px-16 bg-[#0f172a]'>
-      <Skills />
-    </div>
-
-    <div className=''>
-      <Projects />
-    </div>
-
-    <div className='py-16 px-16 bg-[#0f172a] '>
-      <Education />
-    </div>
-    <div>
-      <Experience />
-    </div>
-
-    <div className='bg-[#0f172a]'>
-      <Contact />
-    </div>
-  </main>
-);
+        {/* Background gradient overlay */}
+        <div className="fixed inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 pointer-events-none -z-10" />
+      </div>
+    </ThemeProvider>
+  );
+};
 
 export default App;
