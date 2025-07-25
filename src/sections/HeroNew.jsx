@@ -5,6 +5,9 @@ import { cn, fadeInUp, fadeInLeft, fadeInRight } from '../lib/utils';
 import profileImage from '../assets/Profile.jpg';
 import MagneticButton from '../components/MagneticButton';
 import AnimatedText, { TypewriterText } from '../components/AnimatedText';
+import EnhancedBackground from '../components/EnhancedBackground';
+import FloatingElements from '../components/FloatingElements';
+import ShiningBorder from '../components/ShiningBorder';
 
 const Hero = () => {
   const ref = useRef(null);
