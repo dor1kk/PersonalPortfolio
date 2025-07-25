@@ -272,6 +272,11 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}
+            style={{
+              rotateX: rotateX,
+              rotateY: rotateY,
+              transformStyle: "preserve-3d"
+            }}
             className="relative flex justify-center lg:justify-end"
           >
             <div className="relative">
