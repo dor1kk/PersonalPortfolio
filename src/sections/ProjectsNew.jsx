@@ -352,29 +352,18 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  {/* Action buttons */}
-                  <div className="flex space-x-3 mt-4">
+                  {/* Action button */}
+                  <div className="mt-4">
                     <motion.a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center px-4 py-2 bg-gray-100 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-500 transition-colors"
-                      whileHover={{ scale: 1.02 }}
+                      className="w-full flex items-center justify-center px-4 py-2 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg hover:from-primary/90 hover:to-purple-600/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      whileHover={{ scale: 1.02, y: -2 }}
                       whileTap={{ scale: 0.98 }}
                     >
                       <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </motion.a>
-                    <motion.a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <Eye className="w-4 h-4 mr-2" />
-                      Demo
+                      View Source Code
                     </motion.a>
                   </div>
                 </div>
