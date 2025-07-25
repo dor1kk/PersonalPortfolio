@@ -33,8 +33,8 @@ const Navigation = () => {
     { icon: Mail, href: 'mailto:dorajetkukaj05@gmail.com', label: 'Email' },
   ];
 
-  const handleDownloadCV = () => {
-    downloadResume();
+  const handleDownloadCV = async () => {
+    await generateResumePDF();
   };
 
   return (
