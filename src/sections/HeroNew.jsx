@@ -219,22 +219,27 @@ const Hero = () => {
               variants={textVariants}
               className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start"
             >
-              <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(22, 183, 234, 0.3)" }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-primary text-white font-semibold rounded-lg shadow-lg hover:bg-primary/90 transition-all duration-300"
+              <MagneticButton
+                className="px-8 py-4 bg-gradient-to-r from-primary to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
                 onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                View My Work
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg hover:border-primary hover:text-primary transition-all duration-300"
+                <span className="relative z-10">View My Work</span>
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  initial={false}
+                />
+              </MagneticButton>
+
+              <MagneticButton
+                className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300 relative overflow-hidden group"
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Get In Touch
-              </motion.button>
+                <span className="relative z-10">Get In Touch</span>
+                <motion.div
+                  className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  initial={false}
+                />
+              </MagneticButton>
             </motion.div>
 
             {/* Social Links */}
