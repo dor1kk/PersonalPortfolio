@@ -278,16 +278,7 @@ const Projects = () => {
                     >
                       <Github className="w-5 h-5" />
                     </motion.a>
-                    <motion.a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </motion.a>
+
                   </motion.div>
 
                   {/* Status badge */}
