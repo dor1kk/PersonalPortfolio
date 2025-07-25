@@ -33,8 +33,7 @@ const Navigation = () => {
   ];
 
   const handleDownloadCV = () => {
-    // Add CV download logic here
-    console.log('Downloading CV...');
+    downloadResume();
   };
 
   return (
