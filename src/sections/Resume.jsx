@@ -182,7 +182,7 @@ const Resume = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div id="resume-content" className="grid lg:grid-cols-3 gap-8 bg-white dark:bg-gray-900 p-8 rounded-2xl">
           {/* Left Sidebar - Personal Info */}
           <motion.div
             variants={containerVariants}
