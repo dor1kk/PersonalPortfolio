@@ -1,6 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navigation from './components/Navigation';
+import LoadingScreen from './components/LoadingScreen';
+import ScrollToTop from './components/ScrollToTop';
 import Hero from './sections/HeroNew';
 import About from './sections/AboutNew';
 import Skills from './sections/SkillsNew';
