@@ -20,7 +20,7 @@ const Skills = () => {
         { name: 'Next.js', level: 85, icon: 'https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png' },
         { name: 'TypeScript', level: 80, icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' },
         { name: 'JavaScript', level: 95, icon: 'https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png' },
-        { name: 'Tailwind CSS', level: 88, icon: 'https://camo.githubusercontent.com/73c36843a66af40ade042c619a66b714aa06bcb35fd19868a12d7d0d965dcf9e/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64352f5461696c77696e645f4353535f4c6f676f2e7376672f33323070782d5461696c77696e645f4353535f4c6f676f2e7376672e706e67' },
+        { name: 'Tailwind CSS', level: 88, icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg' },
         { name: 'HTML5', level: 95, icon: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/html-2752158-2284975.png?f=webp&w=256' },
         { name: 'CSS3', level: 90, icon: 'https://cdn.iconscout.com/icon/free/png-256/free-css3-9-1175237.png?f=webp&w=256' }
       ]
