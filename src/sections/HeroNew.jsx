@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
-import { motion, useAnimation, useInView } from 'framer-motion';
-import { ArrowDown, Code, Database, Palette, Github, Linkedin, Mail } from 'lucide-react';
+import { motion, useAnimation, useInView, useMotionValue, useTransform } from 'framer-motion';
+import { ArrowDown, Code, Database, Palette, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 import { cn, fadeInUp, fadeInLeft, fadeInRight } from '../lib/utils';
 import profileImage from '../assets/Profile.jpg';
+import MagneticButton from '../components/MagneticButton';
+import AnimatedText, { TypewriterText } from '../components/AnimatedText';
 
 const Hero = () => {
   const ref = useRef(null);
