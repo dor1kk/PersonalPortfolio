@@ -130,21 +130,39 @@ const Hero = () => {
             </motion.div>
 
             {/* Main headline */}
-            <motion.h1
-              variants={textVariants}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6"
-            >
-              Hi, I'm{' '}
-              <span className="relative">
-                <span className="text-primary">Dorajet</span>
+            <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+              <AnimatedText
+                text="Hi, I'm"
+                type="words"
+                delay={0.5}
+                className="inline-block mr-4"
+              />
+              <span className="relative inline-block">
+                <TypewriterText
+                  text="Dorajet"
+                  speed={100}
+                  delay={1.5}
+                  className="text-primary"
+                />
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
-                  transition={{ duration: 1, delay: 1 }}
+                  transition={{ duration: 1, delay: 2.5 }}
                   className="absolute bottom-2 left-0 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"
                 />
+                {/* Sparkle effects */}
+                <motion.div
+                  animate={{
+                    scale: [1, 1.2, 1],
+                    rotate: [0, 180, 360]
+                  }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 3 }}
+                  className="absolute -top-2 -right-2"
+                >
+                  <Sparkles className="w-6 h-6 text-yellow-400" />
+                </motion.div>
               </span>
-            </motion.h1>
+            </div>
 
             {/* Subtitle with typing effect */}
             <motion.div
