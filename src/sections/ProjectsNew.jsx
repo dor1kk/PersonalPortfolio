@@ -2,6 +2,12 @@ import React, { useRef, useState } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { Github, ExternalLink, Eye, Code, Calendar, Users, Filter } from 'lucide-react';
 import { cn } from '../lib/utils';
+import RentACarMockup from '../assets/RentACarMockup.png';
+import DeliveryApp from '../assets/DeliveryAppImage.png';
+import LMSMockup from '../assets/LmsMockeduo.jpg';
+import ByteMockup from '../assets/ByteTechMockup.jpg';
+import HealthCareMockup from '../assets/HealthCareMockup.jpg';
+import MusicalMockup from '../assets/MusicalMockup.jpg';
 
 const Projects = () => {
   const ref = useRef(null);
