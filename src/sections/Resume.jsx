@@ -119,9 +119,12 @@ const Resume = () => {
     }
   };
 
-  const handleDownload = () => {
-    // Create a printable version
-    window.print();
+  const handleDownload = async () => {
+    await generateResumePDF();
+  };
+
+  const handlePrint = () => {
+    printResume();
   };
 
   return (
