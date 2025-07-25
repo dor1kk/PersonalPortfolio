@@ -53,7 +53,7 @@ const Skills = () => {
         { name: 'Figma', level: 80, icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png' },
         { name: 'Jest', level: 75, icon: 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png' },
         { name: 'Firebase', level: 80, icon: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png' },
-        { name: 'Ant Design', level: 85, icon: 'https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-dl3neb73.png' }
+        { name: 'Ant Design', level: 85, icon: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg' }
       ]
     }
   };
