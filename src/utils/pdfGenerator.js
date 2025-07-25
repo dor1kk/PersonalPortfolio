@@ -239,6 +239,12 @@ export const generateResumePDF = async (resumeData = null) => {
     // Download the PDF
     pdf.save('Dorajet_Kukaj_Resume.pdf');
 
+    // Clean up temporary elements
+    const tempElement = document.getElementById('temp-resume-content');
+    if (tempElement) {
+      document.body.removeChild(tempElement);
+    }
+
     // Remove loading indicator
     document.body.removeChild(loadingDiv);
 
