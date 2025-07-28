@@ -16,7 +16,7 @@ const Experience = () => {
       title: 'Junior Software Engineer',
       company: 'Pabau Clinic Software',
       location: 'London, UK (Remote)',
-      period: '2023 - Present',
+      period: 'Nov 2024 - Present',
       description: 'Contributing to a large-scale health-tech platform serving thousands of clinics worldwide. Working with modern technologies to build scalable solutions for healthcare management.',
       technologies: ['React', 'Next.js', 'GraphQL', 'Prisma', 'Hasura', 'TypeScript'],
       achievements: [
@@ -36,7 +36,7 @@ const Experience = () => {
       title: 'Computer Science & Engineering',
       company: 'University of Business and Technology',
       location: 'Pristina, Kosovo',
-      period: '2022 - Present',
+      period: '2022 - 2025',
       description: 'Pursuing a comprehensive education in computer science with focus on software engineering, algorithms, and modern development practices.',
       technologies: ['Java', 'Python', 'Database Systems', 'Software Engineering', 'Data Structures'],
       achievements: [
@@ -55,7 +55,7 @@ const Experience = () => {
       title: 'Freelance Developer',
       company: 'Various Clients',
       location: 'Remote',
-      period: '2021 - 2023',
+      period: 'Jan 2024 - Oct 2024',
       description: 'Worked on diverse web development projects, from e-commerce platforms to learning management systems, helping clients bring their digital visions to life.',
       technologies: ['React', 'Node.js', 'MongoDB', 'PHP', 'WordPress', 'Tailwind CSS'],
       achievements: [
