@@ -91,24 +91,19 @@ const Skills = () => {
   };
 
   return (
-    <section 
-      id="skills" 
+    <section
+      id="skills"
       ref={ref}
       className="py-20 bg-gray-50 dark:bg-gray-800 relative overflow-hidden"
     >
-      {/* Background decoration */}
-      <div className="absolute inset-0">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-          className="absolute top-32 left-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-32 right-20 w-80 h-80 bg-green-500/5 rounded-full blur-3xl"
-        />
-      </div>
+      {/* Enhanced Background Effects */}
+      <EnhancedBackground
+        density={35}
+        showStars={true}
+        showGrid={true}
+        variant="professional"
+      />
+      <FloatingElements section="skills" density="medium" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
