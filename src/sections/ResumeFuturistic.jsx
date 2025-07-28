@@ -84,7 +84,7 @@ const ResumeFuturistic = () => {
         title: 'Junior Software Engineer',
         company: 'Pabau Clinic Software',
         location: 'London, UK (Remote)',
-        period: '2023 - Present',
+        period: 'Nov 2024 - Present',
         type: 'current',
         achievements: [
           'Developed and maintained critical frontend components serving 10,000+ healthcare professionals',
@@ -97,7 +97,7 @@ const ResumeFuturistic = () => {
         title: 'Freelance Developer',
         company: 'Various Clients',
         location: 'Remote',
-        period: '2021 - 2023',
+        period: 'Jan 2024 - Oct 2024',
         type: 'freelance',
         achievements: [
           'Successfully delivered 15+ full-stack web applications',
@@ -112,7 +112,7 @@ const ResumeFuturistic = () => {
         degree: 'Computer Science & Engineering',
         institution: 'University of Business and Technology',
         location: 'Pristina, Kosovo',
-        period: '2022 - Present',
+        period: '2022 - 2025',
         gpa: 'High Academic Performance',
         details: [
           'Focus on software engineering and modern development practices',
