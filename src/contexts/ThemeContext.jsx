@@ -13,10 +13,16 @@ export const useTheme = () => {
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark');
 
-  // Initialize theme on mount
+  // Initialize theme immediately and on mount
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
+
+    // Apply theme immediately to document
+    const root = window.document.documentElement;
+    root.classList.remove('light', 'dark');
+    root.classList.add(savedTheme);
+    root.setAttribute('data-theme', savedTheme);
   }, []);
 
   useEffect(() => {
