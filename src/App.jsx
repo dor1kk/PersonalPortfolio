@@ -1,44 +1,44 @@
 import React from 'react';
-import { Hero, Header, Skills, Projects, Footer, Contact } from './sections/Index';
-import Services from './sections/Services';
-import Education from './sections/About';
-import GithubCalendar from './sections/GithubCalendar';
-import Experience from './sections/Experience';
+import { ThemeProvider } from './contexts/ThemeContext';
+import Navigation from './components/Navigation';
+import LoadingScreen from './components/LoadingScreen';
+import ScrollToTop from './components/ScrollToTop';
+import AnimatedCursor from './components/AnimatedCursor';
 
-const App = () => (
-  <main>
-    <Header />
+import Hero from './sections/HeroNew';
+import About from './sections/AboutNew';
+import Skills from './sections/SkillsNew';
+import Experience from './sections/ExperienceNew';
+import Projects from './sections/ProjectsNew';
+import Resume from './sections/ResumeFuturistic';
+import Contact from './sections/ContactNew';
 
-    <div className=''>
-      <Hero />
-    </div>
-   
-    <div className='py-16 px-16 bg-[#0f172a]'>
-      <Services />
-    </div>
-    <div>
-      <GithubCalendar />
-    </div>
+const App = () => {
+  return (
+    <ThemeProvider>
+      <div className="relative">
+        <LoadingScreen />
+        <AnimatedCursor />
+        <Navigation />
 
-    <div className='py-16 px-16 bg-[#0f172a]'>
-      <Skills />
-    </div>
+        <main className="pt-16 relative">
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Resume />
+          <Contact />
+        </main>
 
-    <div className=''>
-      <Projects />
-    </div>
+        <ScrollToTop />
 
-    <div className='py-16 px-16 bg-[#0f172a] '>
-      <Education />
-    </div>
-    <div>
-      <Experience />
-    </div>
-
-    <div className='bg-[#0f172a]'>
-      <Contact />
-    </div>
-  </main>
-);
+        {/* Enhanced background gradient overlay */}
+        <div className="fixed inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 pointer-events-none -z-10" />
+        <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-purple-500/5 pointer-events-none -z-10" />
+      </div>
+    </ThemeProvider>
+  );
+};
 
 export default App;
