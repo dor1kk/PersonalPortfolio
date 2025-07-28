@@ -173,11 +173,17 @@ const Skills = () => {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {skillCategories[activeCategory].skills.map((skill, index) => (
-            <motion.div
+            <ShiningBorder
               key={skill.name}
-              variants={skillVariants}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="p-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg border border-gray-200 dark:border-gray-600 group hover:border-primary/30 transition-all duration-300"
+              intensity="low"
+              color="primary"
+              variant="glow"
+              className="rounded-xl"
+            >
+              <motion.div
+                variants={skillVariants}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="p-6 bg-white/90 dark:bg-gray-700/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-600/50 group hover:border-primary/30 transition-all duration-300"
             >
               <div className="flex items-center space-x-4 mb-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-gray-100 dark:bg-gray-600 rounded-lg flex items-center justify-center group-hover:bg-primary/10 transition-colors">
@@ -219,7 +225,8 @@ const Skills = () => {
                   {skill.level}%
                 </motion.div>
               </div>
-            </motion.div>
+              </motion.div>
+            </ShiningBorder>
           ))}
         </motion.div>
 
