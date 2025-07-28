@@ -233,10 +233,16 @@ const Contact = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <motion.div
-              variants={itemVariants}
-              className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700"
+            <ShiningBorder
+              intensity="medium"
+              color="primary"
+              variant="glow"
+              className="rounded-2xl"
             >
+              <motion.div
+                variants={itemVariants}
+                className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+              >
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Send Me a Message
               </h3>
@@ -348,7 +354,8 @@ const Contact = () => {
                   Usually reply within 24 hours • All inquiries are welcome
                 </p>
               </motion.div>
-            </motion.div>
+              </motion.div>
+            </ShiningBorder>
           </motion.div>
         </div>
       </div>
