@@ -22,7 +22,6 @@ const App = () => {
         <Navigation />
 
         <main className="pt-16 relative">
-          <ParticleBackground density={30} />
           <Hero />
           <About />
           <Skills />
