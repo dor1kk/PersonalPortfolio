@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Briefcase, GraduationCap, Calendar, MapPin, ExternalLink, Award } from 'lucide-react';
 import { cn } from '../lib/utils';
+import EnhancedBackground from '../components/EnhancedBackground';
+import FloatingElements from '../components/FloatingElements';
+import ShiningBorder from '../components/ShiningBorder';
 
 const Experience = () => {
   const ref = useRef(null);
