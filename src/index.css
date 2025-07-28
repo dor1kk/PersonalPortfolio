@@ -12,6 +12,15 @@ body {
   padding: 0;
 }
 
+/* Ensure dark mode is applied by default */
+html {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
 
 .glow-effect {
   text-shadow: 0 0 5px #16b7ea, 0 0 10px #16b7ea, 0 0 15px #16b7ea, 0 0 20px #16b7ea;
