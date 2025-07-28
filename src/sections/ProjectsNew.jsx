@@ -8,6 +8,9 @@ import LMSMockup from '../assets/LmsMockeduo.jpg';
 import ByteMockup from '../assets/ByteTechMockup.jpg';
 import HealthCareMockup from '../assets/HealthCareMockup.jpg';
 import MusicalMockup from '../assets/MusicalMockup.jpg';
+import EnhancedBackground from '../components/EnhancedBackground';
+import FloatingElements from '../components/FloatingElements';
+import ShiningBorder from '../components/ShiningBorder';
 
 const Projects = () => {
   const ref = useRef(null);
