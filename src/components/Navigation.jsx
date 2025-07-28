@@ -51,7 +51,7 @@ const Navigation = () => {
         title: 'Junior Software Engineer',
         company: 'Pabau Clinic Software',
         location: 'London, UK (Remote)',
-        period: '2023 - Present',
+        period: 'Nov 2024 - Present',
         achievements: [
           'Developed and maintained critical frontend components serving 10,000+ healthcare professionals',
           'Implemented GraphQL APIs improving data fetching efficiency by 40%',
@@ -63,7 +63,7 @@ const Navigation = () => {
         title: 'Freelance Developer',
         company: 'Various Clients',
         location: 'Remote',
-        period: '2021 - 2023',
+        period: 'Jan 2024 - Oct 2024',
         achievements: [
           'Successfully delivered 15+ full-stack web applications',
           'Maintained 98% client satisfaction rate',
@@ -76,7 +76,7 @@ const Navigation = () => {
         degree: 'Computer Science & Engineering',
         institution: 'University of Business and Technology',
         location: 'Pristina, Kosovo',
-        period: '2022 - Present',
+        period: '2022 - 2025',
         details: [
           'Focus on software engineering and modern development practices',
           'Active participation in coding competitions and tech events'
