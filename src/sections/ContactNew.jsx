@@ -2,6 +2,9 @@ import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle, Coffee, Calendar } from 'lucide-react';
 import { cn } from '../lib/utils';
+import EnhancedBackground from '../components/EnhancedBackground';
+import FloatingElements from '../components/FloatingElements';
+import ShiningBorder from '../components/ShiningBorder';
 
 const Contact = () => {
   const ref = useRef(null);
