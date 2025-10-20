@@ -31,69 +31,6 @@ const Navigation = () => {
     { icon: Mail, href: 'mailto:dorajetkukaj05@gmail.com', label: 'Email' },
   ];
 
-  // Resume data for PDF generation
-  const resumeData = {
-    personal: {
-      name: 'Dorajet Kukaj',
-      title: 'Junior Software Engineer',
-      email: 'dorajetkukaj05@gmail.com',
-      phone: '+383 XX XXX XXX',
-      location: 'Pristina, Kosovo',
-      website: 'dkmyportfolio.netlify.app',
-      linkedin: 'linkedin.com/in/dorajet-kukaj',
-      github: 'github.com/dor1kk'
-    },
-    summary: 'Passionate Junior Software Engineer with expertise in modern web technologies including React, Next.js, GraphQL, and cloud services. Currently contributing to large-scale healthcare technology at Pabau Clinic Software.',
-    experience: [
-      {
-        title: 'Junior Software Engineer',
-        company: 'Pabau Clinic Software',
-        location: 'London, UK (Remote)',
-        period: 'Nov 2024 - Present',
-        achievements: [
-          'Developed and maintained critical frontend components serving 10,000+ healthcare professionals',
-          'Implemented GraphQL APIs improving data fetching efficiency by 40%',
-          'Collaborated with cross-functional teams in agile environment',
-          'Contributed to healthcare platform used by thousands of clinics worldwide'
-        ]
-      },
-      {
-        title: 'Freelance Developer',
-        company: 'Various Clients',
-        location: 'Remote',
-        period: 'Jan 2024 - Oct 2024',
-        achievements: [
-          'Successfully delivered 15+ full-stack web applications',
-          'Maintained 98% client satisfaction rate',
-          'Specialized in React, Node.js, and modern web technologies'
-        ]
-      }
-    ],
-    education: [
-      {
-        degree: 'Computer Science & Engineering',
-        institution: 'University of Business and Technology',
-        location: 'Pristina, Kosovo',
-        period: '2022 - 2025',
-        details: [
-          'Focus on software engineering and modern development practices',
-          'Active participation in coding competitions and tech events'
-        ]
-      }
-    ],
-    skills: {
-      frontend: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS'],
-      backend: ['Node.js', 'GraphQL', 'Prisma', 'Hasura', 'MongoDB'],
-      tools: ['Git', 'VS Code', 'Figma', 'Jest', 'Firebase']
-    },
-    projects: [
-      'Rent A Car System - Full-stack rental platform with real-time chat',
-      'Learning Management System - Educational platform with course management',
-      'E-commerce Platform - Modern online store with payment integration',
-      'Healthcare System - Patient management and appointment booking'
-    ]
-  };
-
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/resume/Dorajet_Kukaj_Resume.pdf';
