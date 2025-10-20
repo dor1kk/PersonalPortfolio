@@ -239,7 +239,7 @@ const Skills = () => {
         >
           {[
             { number: '15+', label: 'Technologies Mastered', icon: Code },
-            { number: '20+', label: 'Projects Completed', icon: Globe },
+            { number: '10+', label: 'Projects Completed', icon: Globe },
             { number: '2+', label: 'Years of Experience', icon: Settings }
           ].map((stat, index) => (
             <motion.div
