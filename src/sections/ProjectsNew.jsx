@@ -31,7 +31,6 @@ const Projects = () => {
       github: 'https://github.com/dor1kk/Rent-A-Car-System-Management',
       demo: 'https://chatapp-430709.web.app',
       features: ['Real-time Chat', 'Car Booking', 'User Management', 'Responsive Design'],
-      timeline: '3 months',
       team: 'Solo Project'
     },
     {
@@ -46,7 +45,6 @@ const Projects = () => {
       github: 'https://github.com/dor1kk/Fast-Food-Delivery-App',
       demo: 'https://chatapp-430709.web.app',
       features: ['Order Management', 'Real-time Tracking', 'Payment Integration', 'Admin Dashboard'],
-      timeline: '2 months',
       team: 'Solo Project'
     },
     {
@@ -61,7 +59,6 @@ const Projects = () => {
       github: 'https://github.com/dor1kk/Learning-Management-System',
       demo: '#',
       features: ['Course Management', 'Progress Tracking', 'Assignment System', 'User Roles'],
-      timeline: '4 months',
       team: 'Solo Project'
     },
     {
@@ -76,7 +73,6 @@ const Projects = () => {
       github: 'https://github.com/dor1kk/Tech-Store-E-Commerce',
       demo: 'https://bytetechstore.netlify.app/',
       features: ['Product Catalog', 'Shopping Cart', 'User Reviews', 'Admin Panel'],
-      timeline: '3 months',
       team: 'Solo Project'
     },
     {
@@ -91,7 +87,6 @@ const Projects = () => {
       github: 'https://github.com/dor1kk/Health-Care-System',
       demo: 'https://health-care-doc.netlify.app/',
       features: ['Doctor Profiles', 'Appointment Booking', 'Patient Records', 'Telemedicine'],
-      timeline: '4 months',
       team: 'Solo Project'
     },
     {
@@ -106,7 +101,6 @@ const Projects = () => {
       github: 'https://github.com/dor1kk/MusicApp',
       demo: 'https://musicalb.netlify.app/',
       features: ['Music Streaming', 'Playlist Management', 'Search & Discovery', 'Social Features'],
-      timeline: '2 months',
       team: 'Solo Project'
     }
   ];
@@ -339,11 +333,7 @@ const Projects = () => {
                   </div>
 
                   {/* Project Meta */}
-                  <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 pt-4 border-t border-gray-200 dark:border-gray-600">
-                    <div className="flex items-center">
-                      <Calendar className="w-3 h-3 mr-1" />
-                      {project.timeline}
-                    </div>
+                  <div className="flex items-center justify-start text-xs text-gray-500 dark:text-gray-400 pt-4 border-t border-gray-200 dark:border-gray-600">
                     <div className="flex items-center">
                       <Users className="w-3 h-3 mr-1" />
                       {project.team}
