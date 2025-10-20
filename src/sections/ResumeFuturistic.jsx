@@ -204,8 +204,13 @@ const ResumeFuturistic = () => {
     }
   };
 
-  const handleDownload = async () => {
-    await generateResumePDF(resumeData);
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume/Dorajet_Kukaj_Resume.pdf';
+    link.download = 'Dorajet_Kukaj_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handlePrint = () => {
