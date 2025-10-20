@@ -23,7 +23,6 @@ const Navigation = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Resume', href: '#resume' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -96,8 +95,13 @@ const Navigation = () => {
     ]
   };
 
-  const handleDownloadCV = async () => {
-    await generateResumePDF(resumeData);
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/resume/Dorajet_Kukaj_Resume.pdf';
+    link.download = 'Dorajet_Kukaj_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
